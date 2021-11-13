@@ -9,6 +9,15 @@ sudo apt install git
 git clone https://github.com/felixbouazza/computer_init.git
 ```
 
+## Installed package
+
+- Python 3
+- Terminator
+- Keepass 2
+- NodeJS v16.0.0 LTS
+- VSCode
+- Docker
+
 ## Execution right
 
 ```console
