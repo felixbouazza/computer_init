@@ -1,7 +1,7 @@
 # computer_init
 Dev computer initialization after formatting
 
-## Clone this repository
+## Clone this repository
 
 ```console
 sudo apt update
