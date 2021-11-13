@@ -16,7 +16,7 @@ git clone https://github.com/felixbouazza/computer_init.git
 - Terminator
 - Keepass 2
 - NodeJS v16.0.0 LTS
-- VSCode
+- VSCodeubuntu
 - Docker
 
 ## Execution right
@@ -34,3 +34,11 @@ sudo chmod +x init.sh
 ## For full docker installation
 
 You have to logout, login from your distribution and run "newgrp docker"
+
+
+## Test script
+
+```console
+docker build . -t test-script
+docker run -it test-script sh
+```
