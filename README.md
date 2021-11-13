@@ -41,4 +41,6 @@ You have to logout, login from your distribution and run "newgrp docker"
 ```console
 docker build . -t test-script
 docker run -it test-script sh
+cd computer_init
+./init.sh
 ```
