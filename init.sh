@@ -1,5 +1,12 @@
 # !/bin/bash
 
+sudo apt-get -y install \
+  apt-transport-https \
+  ca-certificates \
+  curl \
+  gnupg \
+  lsb-release
+
 ## Git
 
 sudo apt update
@@ -7,7 +14,7 @@ sudo apt install git
 
 ## Python3
 
-sudo apt install -y python3 python3-pip python3-dev curl gcc musl-dev libffi-dev libc-dev make
+sudo apt install -y python3 python3-pip python3-dev gcc musl-dev libffi-dev libc-dev make
 
 ## Terminator
 
@@ -29,14 +36,12 @@ sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.
 sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
 rm -f packages.microsoft.gpg
 
-sudo apt install apt-transport-https
 sudo apt update
 sudo apt install code
 
 ## Docker
 
 sudo apt-get update
-sudo apt-get install ca-certificates curl gnupg lsb-release
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
