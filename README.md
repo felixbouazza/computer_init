@@ -1,5 +1,6 @@
 # computer_init
-Dev computer initialization after formatting
+
+Development computer initialization after formatting
 
 ## Clone this repository
 
@@ -9,7 +10,7 @@ sudo apt install git
 git clone https://github.com/felixbouazza/computer_init.git
 ```
 
-## Installed package
+## Installed package
 
 - Python 3
 - Terminator
