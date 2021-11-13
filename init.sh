@@ -5,6 +5,10 @@
 sudo apt update
 sudo apt install git
 
+## Python3
+
+sudo apt install -y python3 python3-pip python3-dev curl gcc musl-dev libffi-dev libc-dev make
+
 ## Terminator
 
 sudo apt install terminator
@@ -14,6 +18,7 @@ sudo apt install terminator
 sudo apt install keepass2
 
 ## NodeJS v16.0
+
 wget -qO- https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt install -y nodejs
 
@@ -38,7 +43,7 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
-sudo groupadd docker
+sudo groupadd docker || echo
 sudo usermod -aG docker $USER
 
 ## For docker installation, you have to logout and login and run "newgrp docker"
