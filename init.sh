@@ -7,11 +7,6 @@ sudo apt-get -y install \
   gnupg \
   lsb-release
 
-## Git
-
-sudo apt update
-sudo apt install git
-
 ## Python3
 
 sudo apt install -y python3 python3-pip python3-dev gcc musl-dev libffi-dev libc-dev make
