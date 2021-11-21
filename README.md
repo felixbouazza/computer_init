@@ -36,11 +36,9 @@ sudo chmod +x init.sh
 You have to logout, login from your distribution and run "newgrp docker"
 
 
-## Test script
+## Test script
 
 ```console
 docker build . -t test-script
-docker run -it test-script sh
-cd computer_init
-./init.sh
+docker run -it test-script ./computer_init/init.sh
 ```
